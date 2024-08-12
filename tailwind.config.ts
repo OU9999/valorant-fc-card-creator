@@ -81,6 +81,9 @@ const config = {
         "gradient-test":
           "conic-gradient(from 0deg,#08f,#f60,#bbffa1,#4c00ff,#ab2666,#09f)",
       },
+      maxWidth: {
+        "336": "84rem",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

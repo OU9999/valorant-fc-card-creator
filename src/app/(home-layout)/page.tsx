@@ -1,3 +1,4 @@
+import ComboBox from "@/components/home/combo-box";
 import RiotFist from "@/components/svg/riot-fist";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -21,21 +22,7 @@ const WelcomeSection = () => {
 const InputSection = () => {
   return (
     <section className="w-full h-auto flex flex-col space-y-3">
-      <div className="flex">
-        <div className="w-20 h-20 p-1 absolute flex justify-center items-center bg-slate-700 rounded-l-md">
-          <div className="w-10 h-12 relative border-b-2 border-b-red-valorant fill-slate-50">
-            <RiotFist />
-          </div>
-        </div>
-        <div className="w-full">
-          <Input
-            id="riot-id"
-            type="text"
-            placeholder="player#KR1"
-            className="pl-24 h-20 text-lg"
-          />
-        </div>
-      </div>
+      <ComboBox />
       <div className="w-full space-x-5 relative flex justify-center items-center overflow-hidden">
         <Separator className="w-1/3" />
         <p>or</p>
